@@ -22,8 +22,10 @@ How many custom React components must a React app have? ----> AS MANY AS YOU WAN
 --- User Interaction & State - Section 45 ---
 -- Section 46 - Listening to Events & Working with Event Handlers ----
 
-EVENT LISTENER -- all these event handler props, want a function
-as a value, a function passed as a value for **onClick** (ExpensesItem.js <button>) and all these other on props
+EVENT LISTENER --(HTML ELEMENT that is an EVENT) all these event handler props, want a function as a value, a function passed as a value for **onClick** (ExpensesItem.js <button>) and all these other on props
 which then is executed when that event occurs.
 
 -- Section 47 - How Component Functions Are Executed -----
+fuctions should always be preformed before **Return**
+
+-- Section 48 - Working with "State" -----
