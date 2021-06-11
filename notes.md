@@ -25,7 +25,22 @@ How many custom React components must a React app have? ----> AS MANY AS YOU WAN
 EVENT LISTENER --(HTML ELEMENT that is an EVENT) all these event handler props, want a function as a value, a function passed as a value for **onClick** (ExpensesItem.js <button>) and all these other on props
 which then is executed when that event occurs.
 
--- Section 47 - How Component Functions Are Executed -----
+**-- Section 47 - How Component Functions Are Executed -----**
 fuctions should always be preformed before **Return**
 
--- Section 48 - Working with "State" -----
+**-- Section 48 - Working with "State" -----**
+
+State is actually not a React specific concept, but it is a key concept in React.
+
+**useState** - is a fuction that creates a special kind of variable where will make changes will lead
+this component function to be called again.; provided by the React library (line 1 of ExpenseItem.js {}.
+
+    It allows us to define values as STATE where changes to these values should reflect in the component function being called again, which is a key difference. by the fact that they start with the word "use" in their name.
+
+    All these hooks must only be called inside of React component functions. They can't be called outside of component functions. They shouldn't be called in any nested functions. They must be called directly.
+
+     **useState** returns an ARRAY where the first value is the value that is being managed (current state value), and the second element in the array is that updating function. (Array Destructuring happens to store both elements in separate variables or constants). It is managed by React in the memory
+
+     If you have data, which might change, and where changes to that data should be reflected on the user interface then you need state because a regular variables will not do the trick with state, you can set and change values.
+
+**-- Section 49 - A Closer Look at the "useState" Hook -----**
