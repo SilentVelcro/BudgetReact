@@ -33,7 +33,7 @@ fuctions should always be preformed before **Return**
 State is actually not a React specific concept, but it is a key concept in React.
 
 **useState** - is a fuction that creates a special kind of variable where will make changes will lead
-this component function to be called again.; provided by the React library (line 1 of ExpenseItem.js {}.
+this component function to be called again.; provided by the React library (line 1 of ExpenseItem.js { useState }.) Specific instance, so it can be repeated on a per component instance basis, having seperate states allows only changes to one element. (like the title in each <ExpenseItem />)
 
     It allows us to define values as STATE where changes to these values should reflect in the component function being called again, which is a key difference. by the fact that they start with the word "use" in their name.
 
@@ -41,6 +41,6 @@ this component function to be called again.; provided by the React library (line
 
      **useState** returns an ARRAY where the first value is the value that is being managed (current state value), and the second element in the array is that updating function. (Array Destructuring happens to store both elements in separate variables or constants). It is managed by React in the memory
 
-     If you have data, which might change, and where changes to that data should be reflected on the user interface then you need state because a regular variables will not do the trick with state, you can set and change values.
+     If you have data, which might change, and where changes to that data should be reflected on the user interface then you need state because a regular variables will not do the trick with state.
 
-**-- Section 49 - A Closer Look at the "useState" Hook -----**
+**-- Section 51 - Adding Form Inputs -----**
