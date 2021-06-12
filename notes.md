@@ -44,3 +44,8 @@ this component function to be called again.; provided by the React library (line
      If you have data, which might change, and where changes to that data should be reflected on the user interface then you need state because a regular variables will not do the trick with state.
 
 **-- Section 51 - Adding Form Inputs -----**
+**-- Section 52 - Listening to User Input -----**
+**-- Section 53 - Working with Multiple States -----**
+**-- Section 54 - Using One State Instead (And What's Better) -----**
+**-- Section 55 - Updating State That Depends On The Previous State -----**
+**-- Section 56 - Handling Form Submission -----**
