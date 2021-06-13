@@ -49,8 +49,25 @@ this component function to be called again.; provided by the React library (line
 **-- Section 54 - Using One State Instead (And What's Better) -----**
 **-- Section 55 - Updating State That Depends On The Previous State -----**
 **-- Section 56 - Handling Form Submission -----**
-**-- Section 57 - Adding Two-Way Binding-----** (could look more into)
-**-- Section 58 - Child-to-Parent Component Communication(Bottom-up)-----**
+**-- Section 57 - Adding Two-Way Binding -----** (could look more into)
+**-- Section 58 - Child-to-Parent Component Communication(Bottom-up) -----**
 important concept of moving data from a child to a parent component by utilizing props to receive a function from the parent component which we call in the child component.
 
-**-- Section 59 - Lifting The State Up-----**
+**-- Section 59 - Lifting The State Up -----**
+**-- Section 60 - Controlled vs Uncontrolled Components & Stateless vs Stateful Components -----**
+**-- Quiz 2-----**
+How should you NOT listen to events when working with React? adding an event listener (e.g. via addEventListener) manually
+
+Which value should you pass to event listener props like onClick? A pointer at the function that should be execute when the event occurs. = you want to pass a "pointer" at the to-be-executed function as a value to onClick etc. Then, this function gets executed "on your behalf" by React when the event occurs.
+
+How can you communicate from one of your components to a parent (i.e. higher level) component? You can accept a function via props and call it from inside the lower-level (child) component to then trigger some action in the parent component (which pssed the fuction). = In JavaScript, functions are just objects (i.e. regular values) and hence you can pass them as values via props to a component. If that component then calls that function, it executes - and that's how you can trigger a function defined in a parent component from inside a child component.
+
+How can you change what a component displays on the screen? Create some "state" value (via useState) which you can then change and output in JSX.
+
+Why do you need this extra "state" concept instead of regular JS variables which you change and use? Because standard JS variables don't cause React components to be re-evaluated. = React doesn't care whether you changed some variable values. It'll not re-evaluate the component function. It only does that for changes to registered state values (created via useState)
+
+Which statement about useState is NOT correct? - calling useState will update the state value = Calling useState again will simply create a new state.
+
+How can you update component state (created via useState)? You can call the state updating function which useStae also returned. = useState returns an array with exactly two elements - the second element is always a function which you can call to set a new value for your state. Calling that function will then also trigger React to re-evaluate the component.
+
+How much state may you manage in one single component? as many state slices as you need/want
