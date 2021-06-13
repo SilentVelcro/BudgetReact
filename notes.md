@@ -49,3 +49,6 @@ this component function to be called again.; provided by the React library (line
 **-- Section 54 - Using One State Instead (And What's Better) -----**
 **-- Section 55 - Updating State That Depends On The Previous State -----**
 **-- Section 56 - Handling Form Submission -----**
+**-- Section 57 - Adding Two-Way Binding-----** (could look more into)
+**-- Section 58 - Child-to-Parent Component Communication(Bottom-up)-----**
+**-- Section 59 - Lifting The State Up-----**
