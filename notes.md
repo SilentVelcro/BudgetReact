@@ -71,3 +71,12 @@ Which statement about useState is NOT correct? - calling useState will update th
 How can you update component state (created via useState)? You can call the state updating function which useStae also returned. = useState returns an array with exactly two elements - the second element is always a function which you can call to set a new value for your state. Calling that function will then also trigger React to re-evaluate the component.
 
 How much state may you manage in one single component? as many state slices as you need/want
+
+**-- Section 5: Rendering Lists & Conditional Content-----**
+** 63. Rendering Lists of Data **
+.map and useStae to present a list of updated data.
+
+** 65. Understanding "Keys" **
+you can use idex if you don't use a key.
+
+** 66. Outputting Conditional Content **
