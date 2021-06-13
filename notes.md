@@ -51,4 +51,6 @@ this component function to be called again.; provided by the React library (line
 **-- Section 56 - Handling Form Submission -----**
 **-- Section 57 - Adding Two-Way Binding-----** (could look more into)
 **-- Section 58 - Child-to-Parent Component Communication(Bottom-up)-----**
+important concept of moving data from a child to a parent component by utilizing props to receive a function from the parent component which we call in the child component.
+
 **-- Section 59 - Lifting The State Up-----**
