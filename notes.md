@@ -80,5 +80,22 @@ How much state may you manage in one single component? as many state slices as y
 you can use idex if you don't use a key.
 
 ** 66. Outputting Conditional Content **
-
 ** 67. Adding Conditional Return Statements **
+** 68. Adding a Chart **
+** 69. Adding Dynamic Styles **
+**-- Quiz 3 -----**
+
+1. What does this code snippet do?
+   someArray.map((element) => <p>{element}</p>)
+
+a. it transforms an array (someArray) into a new array full of JSX elements (which can be output by React)
+
+2. Why should you add the special "key" prop to list JSX elements?
+
+a. It's requited for React to carrectly identify and update (if needed) the list elements.
+
+3. What's true about outputting conditional content in React components?
+
+a. You can work with regular ternary expression of if checks to output or return in/from your component.
+
+4.
